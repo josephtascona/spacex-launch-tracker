@@ -21,12 +21,12 @@ function displayLaunches(launches) {
         card.className = 'launch-card';
 
         const date = new Date(launch.net).toLocaleString();
-        const youtubeSearch = `https://www.youtube.com/results?search_query=${encodeURIComponent(launch.name + ' SpaceX')}`;
+        const youtubeSearch = `https://www.youtube.com/results?search_query=${encodeURIComponent(launch.name + ' SpaceX launch ' + date + ' ' + launch.pad.location.name)}`;
 
         card.innerHTML = `
             <h2>${launch.name}</h2>
             <p><strong>Date:</strong> ${date}</p>
-            <p><a href="${launch.mission.vid_urls?.[0] || youtubeSearch}" target="_blank">Watch Live</a></p>
+            <p><a href="${youtubeSearch}" target="_blank">Watch Live</a></p>
         `;
 
         container.appendChild(card);
