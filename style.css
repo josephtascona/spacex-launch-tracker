@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.launch-card {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #0070f3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
